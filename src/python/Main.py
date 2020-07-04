@@ -1,7 +1,7 @@
 import time
 import Mail
 from PIL import Image, ImageDraw, ImageFont
-from servicesh import ServiceSh
+from Servicesh import ServiceSh
 import detect as detect_person
 
 emailDst="jeduartea@unal.edu.co"
@@ -16,7 +16,7 @@ def main():
    print("IoT - Universidad Nacional de Colombia")
    print("SHUNAL v 1.0.1")
    print("-------------------------------------------")
-   print("Runing service...")
+   print("Running service...")
    while True:
     while isSignal():
         print("Sensors signal : ok")
