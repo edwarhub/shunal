@@ -22,9 +22,11 @@ def main():
         print("Sensors signal : ok")
         img = getPhoto()
         if(hasPerson(img)):
-            print("Sending E-mail to:"+emailDst)
+            print("Sending E-mail to: "+emailDst)
             sendMail(emailDst, image_name)
             #break
+        else:
+            print("Not match a person.")
     time.sleep(0.3)
 
 def isSignal():
