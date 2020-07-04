@@ -1,5 +1,7 @@
-tensorflow==2.0
+tensorflow
 numpy
 Pillow
 opencv-python
 seaborn
+datetime
+email-to
