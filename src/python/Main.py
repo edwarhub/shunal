@@ -1,18 +1,21 @@
 import time
 
+from servicesh import ServiceSh
 
 emailDst="coreo@gmail.com"
 
 
 def main():
+   while True:
     while isSignal():
-        potho=getPhoto()
-        if(hasPerson(potho)):
-            sendMail()    
+       potho=getPhoto()
+       if(hasPerson(potho)):
+           sendMail()
+    time.sleep(0.3)
 
 def isSignal():
-    time.sleep(5)
-    return True
+    service = ServiceSh()
+    return service.isSignal()
 
 def getTemp():
     return 0
