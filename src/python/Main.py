@@ -5,6 +5,10 @@ from Servicesh import ServiceSh
 import detect as detect_person
 
 emailDst="jeduartea@unal.edu.co"
+emailDst1="hjcaviedesb@unal.edu.co"
+emailDst2="juclopezso@unal.edu.co"
+emailDst3="edrojasb@unal.edu.co"
+
 image_name = "./data/images/surveillance2.png"
 # surveillance1.png has no people
 # surveillance2-4.png have people
@@ -24,6 +28,9 @@ def main():
         if(hasPerson(img)):
             print("Sending E-mail to: "+emailDst)
             sendMail(emailDst, image_name)
+            sendMail(emailDst1, image_name)
+            sendMail(emailDst2, image_name)
+            sendMail(emailDst3, image_name)
             #break
         else:
             print("Not match a person.")
